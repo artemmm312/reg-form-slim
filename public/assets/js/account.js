@@ -2,7 +2,6 @@ $(document).ready(function () {
     $('#logout-button').on("click", function () {
         $.ajax({
             url: pathApp + '/account',
-            //url: '/LabX/account',
             type: 'POST',
             data: {action: 'LogOut'},
             xhrFields: {

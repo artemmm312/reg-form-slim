@@ -7,7 +7,6 @@ $(document).ready(function () {
 
         $.ajax({
             url: pathApp + '/authorization',
-            //url: '/LabX/authorization',
             type: 'POST',
             data: {username: username, password: password},
             success: function (response) {

@@ -1,0 +1,33 @@
+{% extends "base.twig" %}
+
+{% block body %}
+
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <h1>Авторизация</h1>
+        </div>
+        <form id="authorization-form">
+            <div class="row justify-content-center">
+                <div class="col-4 form-floating mb-3">
+                    <input type="text" class="form-control " id="username" name="username" required placeholder="Логин">
+                    <label for="username" class="mb-3">Введите логин</label>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 form-floating mb-3">
+                    <input type="password" class="form-control" id="password" name="password" required
+                           placeholder="Пароль">
+                    <label for="password">Введите пароль</label>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2">
+                    <input type="submit" class="btn btn-primary" value="Войти">
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script src="public/assets/js/authorization.js"></script>
+
+{% endblock body %}

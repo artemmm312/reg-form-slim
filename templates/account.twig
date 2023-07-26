@@ -1,0 +1,20 @@
+{% extends "base.twig" %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row text-center m-3">
+            <h1 class="fw-normal fs-2">Личный кабинет</h1>
+        </div>
+        <div class="row m-5">
+            <div class="col-8 text-center">
+                <p class="text-wrap fs-4 fw-bold">{{ Username }}, это ваш личный кабинет</p>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary" id="logout-button">Выйти</button>
+            </div>
+        </div>
+    </div>
+    <script src="public/assets/js/account.js"></script>
+
+{% endblock body %}
